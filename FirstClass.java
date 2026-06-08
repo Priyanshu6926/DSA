@@ -226,4 +226,89 @@ public class FirstClass {
 
 }
 
+
+//LOOPS
+// FOR LOOP
+
+import java.util.*;
+public class FirstClass {
+    public static void main(String[] args) {
+        for ( int counter = 0; counter < 10; counter ++){
+            System.out.println("Hello World");
+        }
+    }
+}
+
+
+import java.util.*;
+public class FirstClass {
+    public static void main(String[] args) {
+        for (int i = 1;i<=69 ; i++){
+            System.out.println(i);
+        }
+    }
+ 
+}
+// WHILE
+
+
+import java.util.*;
+public class FirstClass {
+    public static void main(String[] args) {
+        int i=0;
+        while(i<10){
+            System.out.println(i);
+            i++;
+        }
+        }
+    }
+
+
+
+// DO WHILE
+
+import java.util.*;
+public class FirstClass {
+    public static void main(String[] args) {
+        int i = 2;
+        do {
+         System.out.println("priyanshu");
+            i++;
+        } while(i<=10);
+    }
+}
+
+
+// SUM of natural nos
+
+import java.util.*;
+public class FirstClass {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        for(int i=0;i<=n;i++){
+            sum = sum + i;
+        }
+        System.out.println(sum);
+         
+    }
+}
+
 */
+// table 
+import java.util.*;
+public class FirstClass{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i = 1; i<=10; i++){
+            System.out.println(i*n);
+        
+        }
+    }
+}
+
+
+
+ 
