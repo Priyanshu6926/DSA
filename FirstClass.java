@@ -295,20 +295,37 @@ public class FirstClass {
     }
 }
 
-*/
+
 // table 
 import java.util.*;
 public class FirstClass{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int table = sc.nextInt();
         for(int i = 1; i<=10; i++){
-            System.out.println(i*n);
+            System.out.println(i*table);
         
         }
     }
 }
+*/
 
 
-
- 
+// print all even nos
+import java.util.*;
+public class FirstClass{
+    public static void main(String args[]){
+        for (int i = 1;i <=100000 ; i++){
+            if(i%2 == 0){
+                System.out.println(i);
+            }
+        }
+    }}
+// no is prime or not\
+mport java.util.*;
+public class FirstClass{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int i = 2; i<=n-1 ; i++){
+            
