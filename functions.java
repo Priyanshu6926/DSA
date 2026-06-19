@@ -110,7 +110,7 @@ public static int printSumofOdd(int n){
         System.out.println(printSumofOdd(n));
         sc.close();
     }    
-*/
+
 //Write a function which takes in 2 numbers and returns the greater of those two.
 
 import java.util.*;
@@ -126,6 +126,20 @@ public static int printGreater(int a,int b){
         int a = sc.nextInt();
         int b = sc.nextInt();
         System.out.println(printGreater(a, b));
+    }
+}
+*/
+//Write a function that takes in the radius as input and returns the circumference of a circle.
+import java.util.*;
+
+public class functions {
+    public static double printCircumference(int r){
+        return 2*3.14*r;
+    }
+    public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int r = sc.nextInt();
+    System.out.println(printCircumference(r));
     }
 }
 
