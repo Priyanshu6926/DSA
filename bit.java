@@ -1,3 +1,5 @@
+/*** 
+
 import java.util.*;
 public class bit {
     public static void main(String args[]){
@@ -11,5 +13,18 @@ public class bit {
         else{
             System.out.println("Bit was one");
         }
+    }
+}
+
+*/
+import java.util.*;
+public class bit {
+    public static void main(String args[]){
+        int n = 5;
+        int pos = 1 ;
+        int bitMask = 1 << pos;
+        
+        int newNumber = bitMask | n;
+        System.out.println(newNumber);
     }
 }
