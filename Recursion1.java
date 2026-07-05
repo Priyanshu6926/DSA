@@ -16,7 +16,6 @@ public class Recursion1 {
 }
 
 
-
 // print nos from 1 to 5 using recursion
 public class Recursion1 {
     public static void printNumb(int n){
@@ -31,7 +30,7 @@ public class Recursion1 {
         printNumb(n);
     }
 }
-*/
+
 // print sum of n natural nos using recursion
 public class Recursion1{
     public static void printSum(int i,int n, int sum){
@@ -46,5 +45,23 @@ public class Recursion1{
     }
     public static void main(String[] args) {
         printSum(1,5,0);
+    }
+}
+
+*/
+// factorial of a number using recursion
+public class Recursion1{
+    public static int calcfactorial(int n){    //call
+        if(n == 0 || n ==1){
+            return 1;
+        }
+        int fact_nm1 = calcfactorial(n-1);
+        int fact_n = n * fact_nm1;
+        return fact_n;
+    }
+    public static void main(String[] args){
+        int n = 16;
+        int ans = calcfactorial(n);
+        System.out.println(ans);
     }
 }
