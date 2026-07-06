@@ -48,7 +48,7 @@ public class Recursion1{
     }
 }
 
-*/
+
 // factorial of a number using recursion
 public class Recursion1{
     public static int calcfactorial(int n){    //call
@@ -65,3 +65,9 @@ public class Recursion1{
         System.out.println(ans);
     }
 }
+
+
+*/
+
+// fibonacci series using recursion
+ 
