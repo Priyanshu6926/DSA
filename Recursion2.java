@@ -17,7 +17,7 @@ public class Recursion2 {
     }
 }
 
-*/
+
 
  // reverse of a string using recursion. O(n)
 public class Recursion2{
@@ -33,4 +33,34 @@ public class Recursion2{
         String str = "qwerty";
         printRev(str,str.length()-1);
     }
+}
+
+
+*/
+
+// find 1st and last occurrence of an element in an array using recursion. O(n)
+public class Recursion2{
+    public static int first = -1;
+    public static int last = -1;
+
+    public static void findOcc(String str, int idx,char element){
+        if(idx == str.length()){
+            System.out.println(first);
+            System.out.println(last);
+            return;
+        }
+        char currChar = str.charAt(idx);
+        if(currChar == element){
+            if(first == -1){
+                first = idx;
+            }else{  
+                last = idx;
+            }   
+    }
+    findOcc(str,idx+1,element);
+    }
+    public static void main(String args[]){
+        String str = "abaacdaefaah";
+        findOcc(str,0,'a');
+}
 }
