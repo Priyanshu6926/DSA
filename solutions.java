@@ -1,4 +1,4 @@
-class Solution {
+public class solutions {
    public boolean isSafe(char[][] board, int row, int col, int number) {
        //column
        for(int i=0; i<board.length; i++) {
