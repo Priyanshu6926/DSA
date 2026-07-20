@@ -1,7 +1,7 @@
 import java.util.*;
 public class ArrayListDemo {
     public static void main(String args[]){
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList();
         // addd element
         list.add(4);    
         list.add(5);
