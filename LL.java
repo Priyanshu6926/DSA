@@ -1,157 +1,161 @@
-// public class LL {
-//     Node head;
-//     private int size;
+// // public class LL {
+// //     Node head;
+// //     private int size;
 
-//     LL() {
-//         this.size = 0;
-//     }
+// //     LL() {
+// //         this.size = 0;
+// //     }
 
-//     class Node {
-//         String data;
-//         Node next;
+// //     class Node {
+// //         String data;
+// //         Node next;
 
-//         Node(String data) {
-//             this.data = data;
-//             this.next = null;
-//             size++;
-//         }
-//     }
+// //         Node(String data) {
+// //             this.data = data;
+// //             this.next = null;
+// //             size++;
+// //         }
+// //     }
 
-//     // Add First
-//     public void addFirst(String data) {
-//         Node newNode = new Node(data);
+// //     // Add First
+// //     public void addFirst(String data) {
+// //         Node newNode = new Node(data);
 
-//         if (head == null) {
-//             head = newNode;
-//             return;
-//         }
+// //         if (head == null) {
+// //             head = newNode;
+// //             return;
+// //         }
 
-//         newNode.next = head;
-//         head = newNode;
-//     }
+// //         newNode.next = head;
+// //         head = newNode;
+// //     }
 
-//     // Add Last
-//     public void addLast(String data) {
-//         Node newNode = new Node(data);
+// //     // Add Last
+// //     public void addLast(String data) {
+// //         Node newNode = new Node(data);
 
-//         if (head == null) {
-//             head = newNode;
-//             return;
-//         }
+// //         if (head == null) {
+// //             head = newNode;
+// //             return;
+// //         }
 
-//         Node currNode = head;
+// //         Node currNode = head;
 
-//         while (currNode.next != null) {
-//             currNode = currNode.next;
-//         }
+// //         while (currNode.next != null) {
+// //             currNode = currNode.next;
+// //         }
 
-//         currNode.next = newNode;
-//     }
+// //         currNode.next = newNode;
+// //     }
 
-//     // Print List
-//     public void printList() {
-//         if (head == null) {
-//             System.out.println("List is empty");
-//             return;
-//         }
+// //     // Print List
+// //     public void printList() {
+// //         if (head == null) {
+// //             System.out.println("List is empty");
+// //             return;
+// //         }
 
-//         Node currNode = head;
+// //         Node currNode = head;
 
-//         while (currNode != null) {
-//             System.out.print(currNode.data + "-->");
-//             currNode = currNode.next;
-//         }
+// //         while (currNode != null) {
+// //             System.out.print(currNode.data + "-->");
+// //             currNode = currNode.next;
+// //         }
 
-//         System.out.println("null");
-//     }
+// //         System.out.println("null");
+// //     }
 
-//     // Delete First
-//     public void deleteFirst() {
-//         if (head == null) {
-//             System.out.println("List is empty");
-//             return;
-//         }
+// //     // Delete First
+// //     public void deleteFirst() {
+// //         if (head == null) {
+// //             System.out.println("List is empty");
+// //             return;
+// //         }
 
-//         head = head.next;
-//         size--;
-//     }
+// //         head = head.next;
+// //         size--;
+// //     }
 
-//     // Delete Last
-//     public void deleteLast() {
-//         if (head == null) {
-//             System.out.println("List is empty");
-//             return;
-//         }
+// //     // Delete Last
+// //     public void deleteLast() {
+// //         if (head == null) {
+// //             System.out.println("List is empty");
+// //             return;
+// //         }
 
-//         size--;
+// //         size--;
 
-//         if (head.next == null) {
-//             head = null;
-//             return;
-//         }
+// //         if (head.next == null) {
+// //             head = null;
+// //             return;
+// //         }
 
-//         Node secondLast = head;
+// //         Node secondLast = head;
 
-//         while (secondLast.next.next != null) {
-//             secondLast = secondLast.next;
-//         }
+// //         while (secondLast.next.next != null) {
+// //             secondLast = secondLast.next;
+// //         }
 
-//         secondLast.next = null;
-//     }
+// //         secondLast.next = null;
+// //     }
 
-//     // Get Size
-//     public int getSize() {
-//         return size;
-//     }
+// //     // Get Size
+// //     public int getSize() {
+// //         return size;
+// //     }
 
-//     public static void main(String[] args) {
+// //     public static void main(String[] args) {
 
-//         LL list = new LL();
+// //         LL list = new LL();
 
-//         list.addFirst("a");
-//         list.addFirst("b");
-//         list.printList();
+// //         list.addFirst("a");
+// //         list.addFirst("b");
+// //         list.printList();
 
-//         list.addLast("c");
-//         list.printList();
+// //         list.addLast("c");
+// //         list.printList();
 
-//         list.addFirst("d");
-//         list.printList();
+// //         list.addFirst("d");
+// //         list.printList();
 
-//         list.deleteFirst();
-//         list.printList();
+// //         list.deleteFirst();
+// //         list.printList();
 
-//         list.deleteLast();
-//         list.printList();
+// //         list.deleteLast();
+// //         list.printList();
 
-//         System.out.println(list.getSize());
+// //         System.out.println(list.getSize());
 
-//         list.addFirst("this");
-//         System.out.println(list.getSize());
-//     }
+// //         list.addFirst("this");
+// //         System.out.println(list.getSize());
+// //     }
+// // }
+
+
+// import java.util.*;
+
+
+// class LL {
+//    public static void main(String args[]) {
+//        LinkedList<String> list = new LinkedList<String>();
+//        list.add("is");
+//        list.add("a");
+//        list.addLast("list");
+//        list.addFirst("this");
+//        list.add(3, "linked"); 
+//        System.out.println(list);
+
+
+//        System.out.println(list.get(0));
+//        System.out.println(list.size());   
+//        list.remove(3);
+//        list.removeFirst();
+//        list.removeLast();
+      
+//        System.out.println(list);
+//    }
 // }
 
 
-import java.util.*;
+// Reverseing a linked list
 
-
-class LL {
-   public static void main(String args[]) {
-       LinkedList<String> list = new LinkedList<String>();
-       list.add("is");
-       list.add("a");
-       list.addLast("list");
-       list.addFirst("this");
-       list.add(3, "linked");
-       System.out.println(list);
-
-
-       System.out.println(list.get(0));
-       System.out.println(list.size());   
-       list.remove(3);
-       list.removeFirst();
-       list.removeLast();
-      
-       System.out.println(list);
-   }
-}
