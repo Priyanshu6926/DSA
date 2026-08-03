@@ -1,3 +1,4 @@
+package Arrays;
 /**
  * LeetCode 26 - Remove Duplicates from Sorted Array
  *

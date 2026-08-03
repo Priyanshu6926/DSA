@@ -1,3 +1,4 @@
+package Arrays;
 /**
  * LeetCode 217 - Contains Duplicate
  *

@@ -1,3 +1,4 @@
+package Arrays;
 /*
  * LeetCode 1672 - Richest Customer Wealth
  * Difficulty: Easy

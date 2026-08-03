@@ -1,1 +1,1 @@
-console.log("Priyanshu")
+console.log(null > 0)

@@ -1,4 +1,4 @@
-package arrays;
+package Arrays;
 import java.util.*;
 public class ArrayListDemo {
     public static void main(String args[]){
