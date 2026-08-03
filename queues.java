@@ -135,3 +135,6 @@ public class queues {
         }
     }
 }
+
+
+// linkedlist queue
