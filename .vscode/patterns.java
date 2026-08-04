@@ -1,4 +1,4 @@
-package.vscode;
+
 
 public class patterns {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class patterns {
             
             for (int j=1; j<=m;j++){
             System.out.println();
+            }
         }
-
     }
 }
