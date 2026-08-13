@@ -317,6 +317,59 @@
 
 // count of nodes
 
+// package Trees;
+// import java.util.*;
+// public class trees{
+//     static class Node{
+//         int data;
+//         Node left;
+//         Node right;
+
+//         Node(int data){
+//             this.data = data;
+//             this.left = null;
+//             this.right = null;
+//         }
+//     }
+
+//         static class BinaryTree{
+//             static int idx = -1;
+//             public static Node buildTree(int node[]){
+//                 idx++;
+//                 if(node[idx] == -1){
+//                     return null;
+//                 }
+//                 Node newNode = new Node(node[idx]);
+//                 newNode.left = buildTree(node);
+//                 newNode.right = buildTree(node);
+//                 return newNode;            
+//             }
+//         }
+
+// // count
+// public static int countofNodes(Node root){
+//     if(root == null){
+//         return 0;
+//     }
+//     int leftNodes = countofNodes(root.left);
+//     int rightNodes = countofNodes(root.right);
+//     return leftNodes + rightNodes + 1;
+// }
+
+        
+//         public static void main(String[] args) {
+//             int node[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
+//             BinaryTree tree = new BinaryTree();
+//             Node root = tree.buildTree(node);
+
+//             // calling postorder traversal
+//         System.out.println(countofNodes(root));
+//      }
+// }
+
+
+ 
+//sum of nodes
 package Trees;
 import java.util.*;
 public class trees{
@@ -346,14 +399,14 @@ public class trees{
             }
         }
 
-// count
-public static int countofNodes(Node root){
+// sum
+public static int sumofNodes(Node root){
     if(root == null){
         return 0;
     }
-    int leftNodes = countofNodes(root.left);
-    int rightNodes = countofNodes(root.right);
-    return leftNodes + rightNodes + 1;
+    int leftsum = sumofNodes(root.left);
+    int rightsum = sumofNodes(root.right);
+    return leftsum + rightsum + root.data;
 }
 
         
@@ -366,7 +419,3 @@ public static int countofNodes(Node root){
         System.out.println(countofNodes(root));
      }
 }
-
-
- 
-
